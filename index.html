@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Badet Mbumba</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #ccc;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .cv-container {
+      width: 210mm;
+      height: 297mm;
+      display: flex;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      background-color: white;
+    }
+
+    .cv-header {
+      width: 30%;
+      background-color: #6a1b9a; /* Violet foncé */
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .profile-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid white;
+    }
+
+    .cv-content {
+      width: 70%;
+      padding: 30px;
+      background-color: white;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-top: 25px;
+      color: #6a1b9a;
+    }
+
+    p, li {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+
+      .cv-container {
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+    <!-- Colonne de gauche -->
+    <header class="cv-header">
+      <img src="cv.jpg" alt="Photo de profil" class="profile-photo" />
+      <h1>Badet Mbumba</h1>
+      <nav>
+        <p> +243 814-441-588</p>
+        <p> mbumbacle@gmail.com</p>
+      </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="cv-content">
+      <section class="profile">
+        <h2>À propos</h2>
+        <p>Étudiante à l'UNH en faculté d'informatique L1, apprentie développeuse programmeuse.</p>
+      </section>
+
+      <section class="experience">
+        <h2>Expérience professionnelle</h2>
+        <article class="job">
+          <h3 class="job-title">Store Manager - LUXURY CAR CENTER, New York</h3>
+          <p><strong>09/2015</strong> à <strong>06/2019</strong></p>
+          <ul>
+            <li>Motiver et coacher les employés pour atteindre les objectifs de vente.</li>
+            <li>Créer et maintenir de bonnes relations avec les clients.</li>
+            <li>Analyser les tendances du marché et optimiser les services.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <h3 class="job-title">Store Manager - JAPAN CAR CENTER, New York</h3>
+          <p><strong>09/2014</strong> à <strong>09/2015</strong></p>
+          <ul>
+            <li>Gérer les relations avec la clientèle.</li>
+            <li>Encadrer les ventes avec des questions stratégiques.</li>
+            <li>Coordonner les réparations et l'entretien des véhicules.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="highlights">
+        <h2>Langues parlées</h2>
+        <ul>
+          <li>Français</li>
+          <li>Anglais</li>
+          <li>Lingala</li>
+          <li>Coréen</li>
+        </ul>
+      </section>
+
+      <section class="education">
+        <h2>Formation</h2>
+        <p><strong>Programmeuse en langages : Javascript, HTML5, CSS, C, C++</strong></p>
+      </section>
+
+      <aside class="hobbies">
+        <h2>Loisirs</h2>
+        <p>Lire des livres - Une excellente façon de se détendre et de garder l'esprit affûté.</p>
+        <p>Écouter de la musique - Permet de réfléchir et de se calmer.</p>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>
